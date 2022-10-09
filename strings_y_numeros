@@ -1,0 +1,16 @@
+"""
+Existen diferenets tipos de datos en python
+String= tipo de palabra o frase
+numero= tipo de dato numerico
+entero=numeros sin decimales
+float=numeros con decimales
+"""
+palabra="hola mundo" # string
+oracion='hola mundo comilla simple' # string
+
+entero=2022 # entero
+conDecimales=20.2 # float
+complejo=1j # numeros complejos
+
+print(palabra,oracion,
+entero,conDecimales,complejo)
