@@ -1,0 +1,9 @@
+"""
+Es un tipo de datos que solo puede contener 2 tipos de valores
+verdadeo o falso
+"""
+
+booleano1 = False
+booleano2 = True
+
+print(booleano1,booleano2)
