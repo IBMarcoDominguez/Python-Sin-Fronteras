@@ -1,0 +1,41 @@
+"""
+Las variables son contenedores de informacion
+por ejemplo una caja, dentro d ela caja hay un valor
+existen diferentes tipos de datos o valores por lo que
+el contenedor puede guardar diferentes tipos de datos
+"""
+from re import I
+
+
+x=5
+y="Chanchito Feliz"
+print(x,y)
+
+email='chanchito@feliz.com'
+print(email)
+
+"""
+Las variables deben de tener un nombre representativo
+*No se pueden crear variables iniciando con numeros (1mi_var)
+*Normalmente se utiliza guiiones bajos para crear variables (mi_var)
+*No podemos crear una variable espaciada (mi var)
+"""
+_mi_var="chanchito"
+MIVAR="chanchito"
+
+a,b,c="lala","lele","lili"
+print(a,b,c)
+
+valor1 = valor2 = valor3= "Chanchito Feliz"
+print(valor1,valor2,valor3)
+
+"""
+Python nos permite agregar concatenacion de variables
+se trata de juntar los valores de 2 variables para formar una nueva variable
+o un valor compuesto
+"""
+
+inicio="Hola "
+final="Mundo"
+print(inicio+final)
+print(f'{inicio} {final}')
