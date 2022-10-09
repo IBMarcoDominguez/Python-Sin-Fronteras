@@ -1,0 +1,19 @@
+"""
+La diferencia de las tuplas a las listas es que las tuplas no se pueden modificar
+tuplas tiene menos metodos que las listas
+Las tuplas no tienen metodo append
+por lo tanto no se pueden agregar datos
+para hacerlo se necesita convertir la tupla a lista
+>>metodo
+list = util para convertir una tupla a una lista
+tuple = util para convertir una lista a una tupla
+"""
+tupla = ("hola","mundo","somos","tupla")touch
+#print(tupla.count("hola"))
+#print(tupla.index("mundo"))
+#print(tupla[0])
+listatupla = list(tupla)
+listatupla.append("chanchito")
+print(listatupla)
+tuplatupla = tuple(listatupla)
+print(tuplatupla)
