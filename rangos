@@ -1,0 +1,7 @@
+"""
+Rangos en python
+>>metodo
+range = permite crear un limite de valores 
+"""
+rango = range(6)
+print(rango)
