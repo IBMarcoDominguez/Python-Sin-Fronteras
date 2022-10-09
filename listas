@@ -1,0 +1,71 @@
+"""
+Una lista en python es un agrupacion de datos
+varios valores dentro de una variable tipo lista
+"""
+
+lista=[1,2,3]
+lista.append(4)
+lista3=lista
+lista2=lista.copy()
+print(lista,lista2,lista3)
+lista.clear()
+print(lista,lista2,lista3)
+
+"""
+Contador de elementos y 
+calculando el largo de una lista
+
+Contar un elemento y ver cuantas veces se repite
+>>Metodos
+count = cuentame cuantos valores indicados hay en una lista 
+len = cuentame cuantos valores hay en una lista
+"""
+#print(lista,lista2.count(4))
+#print(len(lista2), len(lista3))
+largolista = len(lista)
+largolista2 = len(lista2)
+
+print(largolista,largolista2)
+
+"""
+Acceder a elementos de las listas
+
+acceder a los elementos de un arreglo
+
+Se utiliza los indices empezando con el valor 0 desde una lista
+"""
+
+print("          ")
+lista = ["Hola","Mundo","Chanchito Feliz"]
+print(lista[0])
+print(lista[1])
+print(lista[2])
+
+"""
+Eliminar elementos de una lista
+>>Metodos
+pop = Elimina el ultimo valor de una lista
+remove = Elimina un elemento seleccionado dentro de los avalores de una lista
+"""
+
+print("        ")
+
+#lista.pop()
+#print(lista)
+#lista.pop()
+#print(lista)
+lista.remove("Hola")
+print(lista)
+
+"""
+Reverse y Scot
+Invertir los valores y cambiar los valores de una lista
+
+>>Metodo
+reverse = invierte los valores de una lista
+scort = Ordena una lista pero se necesita forzosamente ser el mismo tipo de dato en la lista
+"""
+print("               ")
+lista.reverse()
+lista.sort()
+print(lista)
