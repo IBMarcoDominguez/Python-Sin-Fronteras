@@ -1,0 +1,12 @@
+"""
+Construir un nuevo juego y utilizar input
+"""
+
+dato = input("Ingrese dato: ")
+
+lista = ["hola","mundo","chanchito","feliz","dragones"]
+
+if lista.count(dato) < 0:
+    print("el dato existe:",dato)
+else:
+    print("el dato no existe:",dato)
