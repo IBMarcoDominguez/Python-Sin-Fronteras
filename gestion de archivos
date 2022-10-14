@@ -1,0 +1,32 @@
+"""
+en python se pueden manipular archivos desde python
+permisos en archivos
+r=read = leer
+a = append = agregar mas texto al final
+w = write = modificar todo el achivo, elimina lo viejo y agrega lo nuevo
+x = crear un archivo
+"""
+# c = open("Python/PythonSinFronteras/intro-python/chanchito.txt","a")
+# print(c.read()) #leer todo
+# print(c.readline) # leer linea por linea
+
+# #manejar linea por linea el archivo txt
+# for x in c:
+#     print(x)
+
+# c.write("\ngregaremos esta nueva linea")
+# c.close()# muy buena practica cerrar el archivo
+
+# c = open("Python/PythonSinFronteras/intro-python/chanchito.txt","r")
+# print(c.read())
+# c.close()
+
+# os es una libreria para eliminar archivos dentro del sistema operativo
+import os
+# os.remove("Python/PythonSinFronteras/intro-python/chanchito.txt")
+
+if os.path.exists("Python/PythonSinFronteras/intro-python/eliminar.tct"):
+    os.read("Python/PythonSinFronteras/intro-python/eliminar.tct")
+else:
+    print("El archivo no existe")
+# os.rmdir("nombre de la carpeta")
