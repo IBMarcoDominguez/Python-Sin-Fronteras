@@ -1,0 +1,59 @@
+"""
+While Loop
+metodos
+continue: salta una linea de algoritmo
+break: termina los bucles
+"""
+
+i = 0
+
+# while i<5:
+#     print(i)
+#     i += 1
+#     if i==3:
+#         continue
+#         break
+
+"""
+for es un bucle basado a un rango
+nos permite acceder a los valores de una lista
+"""
+
+
+# usuarios = ["Chanchito Feliz","Felipe","Roberto","Marco"]
+
+# for usuario in usuarios:
+#     print(usuario)
+
+"""
+for tambien nos permite accder a cada uno de los caracteres de un string
+"""
+# usuario = "Chanchito Feliz"
+
+# for c in usuario:
+#     print(c)
+
+# usuarios = ["Chanchito Feliz","Felipe","Roberto","Marco"]
+
+# for usuario in usuarios:
+#     if usuario == "Roberto":
+#         #break #cuando detecta roberto deja de iterar 
+#         continue #cuando detecta roberto quita roberto y continua iterando
+#     print(usuario)
+
+"""
+range(inicio,final,incremento)
+"""
+
+# for x in range(3,30,3):
+#     print(x)
+# else:
+#     print("hemos terminado")
+
+usuarios = ["Chanchito Feliz","Felipe","Roberto","Marco"]
+
+edades = [24,25,26,35]
+
+for usuario in usuarios:
+    for edad in edades:
+        print(usuario,edad)
