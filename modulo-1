@@ -1,0 +1,24 @@
+"""
+Los modulos se utilizan para poder importar diferentes tipos de
+funciones..
+se puede importar todo el modulo o espesificamente una funcion del modulo
+
+Necesariamente para instalar una libreria/modulo se debe de buscar en pypi.org
+
+Los modulos son poderosos para minimizar trabajo
+"""
+
+# import modulos as xs
+
+from modulos import saludo, mascotas
+from camelcase import CamelCase
+# print(xs.mascotas)
+# xs.saludo("Marco")
+
+saludo("Marco") 
+print(mascotas)
+
+c = CamelCase()
+s = "Esta oración necesita Camelcase"
+camelcase = c.hump(s)
+print(camelcase)
