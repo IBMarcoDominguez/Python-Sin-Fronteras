@@ -1,0 +1,8 @@
+"""
+Los modulos son funciones, variables y logica que se pueda
+utilizar en diferentes programas como recurso
+"""
+mascotas = ["Chanchito Feliz","Felipe","Fluffy","Dragon"]
+
+def saludo(nombre):
+    print("Hola!",nombre)
