@@ -1,0 +1,130 @@
+"""
+Python es un lenguaje multi-paradigmna
+Los objetos de python son un tipo de datos que contiene propiedades y metodos
+propiedades = puntero, datos, variables, caracteristicas
+metodos = funciones,algoritmos logicos, condiconales,acciones
+"""
+
+"""
+Clase = son los planos de un algoritmo para crear una estructura
+es necesario que una clase inicie con mayscula
+Instancia = propiedad para hacer trabajar una clase que contenga objetos y metodos
+es necesario que las instancias inicie en minuscula
+"""
+
+# class Usuario: 
+#     nombre = "Felipe"
+#     apellido = "Feliz"
+# usuario = Usuario()
+# print(usuario.nombre, usuario.apellido)
+
+# class Usuario: 
+#     def __init__(self,nombre,apellido):
+#         self.nombre=nombre
+#         self.apellido=apellido
+
+# usuario = Usuario("Felipe","Feliz")
+# usuario2 = Usuario("Chanchito","Feliz")
+# print(usuario.nombre, usuario.apellido,usuario2.nombre, usuario2.apellido)
+
+"""
+los Metodos tienen multiples aplicaciones
+agregar usuarios
+verificar usuarios
+usar bases de datos
+etc...
+"""
+# class Usuario: 
+#     def __init__(self,nombre,apellido):
+#         self.nombre=nombre
+#         self.apellido=apellido
+#     def saludo(self):
+#         print("Hola!, mi nombre es:",self.nombre,self.apellido)
+
+# usuario = Usuario("Felipe","Feliz")
+# usuario2 = Usuario("Chanchito","Feliz")
+
+# usuario.saludo()
+# usuario2.saludo()
+
+"""
+Metodos aplicados a clases
+"""
+
+# class Usuario: 
+#     def __init__(self,nombre,apellido):
+#         self.nombre=nombre
+#         self.apellido=apellido
+#     def saludo(self):
+#         print("Hola!, mi nombre es:",self.nombre,self.apellido)
+
+# usuario = Usuario("Felipe","Feliz")
+# usuario2 = Usuario("Chanchito","Feliz")
+
+# usuario.saludo()
+# usuario.nombre="Chanchito"
+# usuario.saludo()
+
+# # eliminar instancias
+# # del usuario.nombre
+# # usuario.saludo()
+
+# del usuario
+# print(usuario)
+
+"""
+Herencias
+"""
+
+class Usuario: 
+    def __init__(self,nombre,apellido):
+        self.nombre=nombre
+        self.apellido=apellido
+    def saludo(self):
+        print("Hola!, mi nombre es:",self.nombre,self.apellido)
+
+class Admin(Usuario):
+    def superSaludo(self):
+        print("Hola|, me llamo:",self.nombre,"y soy administrador")
+
+
+# admin = Admin("Super","Feliz")
+# admin.saludo()
+# admin.superSaludo()
+
+"""
+Ejercicio de clases
+Extencion del metodo init
+"""
+
+class Animal:
+    def __init__(self, nombre, onomatopeya):
+        self.nombre = nombre
+        self.onomatopeya = onomatopeya
+    def saludo(self):
+        print("Hola soy un ", self.tipo ,"y mi sonido es el",self.onomatopeya)
+
+class Gato(Animal):
+    tipo = "gato"
+    def __init__(self,nombre,onomatopeya):
+        #extendemos el metodo init
+        Animal.__init__(self,nombre,onomatopeya)
+        print("Hola soy un gato extendido")
+
+class Perro(Animal):
+    tipo = "perro"
+    #exterder el comportamiento de __init__
+    def __init__(self,nombre,onomatopeya):
+        super().__init__(nombre,onomatopeya)
+        print("Instanciando un perro")
+class Canario(Animal):
+    tipo = "canario"
+
+gato = Gato("Fluffy","Maullido")
+gato.saludo()
+
+perro = Perro("Bigote","Ladrido")
+perro.saludo()
+
+canario = Canario("Piolin","Silvido")
+canario.saludo()
