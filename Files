@@ -1,0 +1,32 @@
+"""
+In python you can manipulate files from python
+file permissions
+r=read = leer
+a = append = add more text at the end
+w = write = modify the whole file, delete the old and add the new
+x = create a file
+"""
+# c = open("Python/PythonSinFronteras/intro-python/chanchito.txt","a")
+# print(c.read()) # read all te file
+# print(c.readline) # read line for line
+
+# #handle line for line the file txt
+# for x in c:
+#     print(x)
+
+# c.write("\ngregaremos esta nueva linea")
+# c.close()# it`s good practice close the file
+
+# c = open("Python/PythonSinFronteras/intro-python/chanchito.txt","r")
+# print(c.read())
+# c.close()
+
+# os it`s a library for delete files inside of sistem operational
+import os
+# os.remove("Python/PythonSinFronteras/intro-python/chanchito.txt")
+
+if os.path.exists("Python/PythonSinFronteras/intro-python/eliminar.tct"):
+    os.read("Python/PythonSinFronteras/intro-python/eliminar.tct")
+else:
+    print("El archivo no existe")
+# os.rmdir("nombre de la carpeta")
