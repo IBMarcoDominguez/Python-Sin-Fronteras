@@ -1,0 +1,64 @@
+"""
+Las funciones son bloques de codigo que se ocupan
+para no repetir codigos y almacenar algoritmos ejecutables
+"""
+
+# def miFuncion():
+#     print("Mi primera Función!")
+# miFuncion()
+# miFuncion()
+# miFuncion()
+# miFuncion()
+# miFuncion()
+# miFuncion() 
+
+# def imprimeDato(nombre,apellido):
+#     print("El nombre completo es",nombre,apellido)
+# imprimeDato("Chanchito","Feliz")
+
+
+# def imprimeDato(*nombre):
+#     print("El nombre completo es",nombre[1])
+# imprimeDato("Chanchito","Feliz","lala","lele")
+
+# def nombreCompleto(apellido,nombre):
+#     print(nombre,apellido)
+#nombreCompleto(nombre="Chanchito",apellido="Feliz")
+
+# def nombreCompleto2(**kwargs):
+#     print(kwargs['nombre'],kwargs['apellido'])
+# nombreCompleto(nombre="Chanchito",apellido="Feliz")
+
+# def miFuncion2(argumento = "Chanchito"):
+#     print(argumento)
+# miFuncion2('Batman')
+# miFuncion2()
+
+# def miFuncionLista(lista):
+#     for el in lista:
+#         print(el)
+# miFuncionLista(["Chanchito","Feliz"])
+# 
+# def concatenaNombres(lista):
+#     i=""
+#     for el in lista:
+#         i = i+' '+el
+#     return i
+# 
+# nombre = concatenaNombres(["Chanchito","Feliz"])
+# print(nombre)
+
+"""
+Recursividad
+sirve para analizar conjuntos de datos o para
+ejecutar ordenes continuamente para evitar reescribir la orden muchas veces
+por ejemplo para llamar un servidor varias veces antes de arrojar el error de conexion
+de esta manera prevenimos un error y evitamos fatigar al usuario por un error de reconectividad.
+"""
+
+def recursion(i):
+    if (i<1):
+        return i
+    print(i)
+    recursion(i-1)
+recursion(6)
