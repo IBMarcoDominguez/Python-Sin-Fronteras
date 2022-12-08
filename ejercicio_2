@@ -1,0 +1,9 @@
+"""
+ingresa nombre y apellido e imprimirlo al reves
+"""
+nombre="Marco"
+apellido="Feliz"
+
+concatenacion=nombre+" "+apellido
+
+print(concatenacion[::-1])
