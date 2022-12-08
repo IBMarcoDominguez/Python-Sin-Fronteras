@@ -1,0 +1,9 @@
+"""
+Multiplicar dos numeros sin usar el simbolo de multiplicacion
+"""
+a = 4
+b = 8
+resultado = 0
+for x in range(b):
+    resultado+=a
+print(f"El resultado es: {resultado}")
