@@ -1,0 +1,30 @@
+"""
+metodo
+try = su usa para validar datos
+except = captura y ejecuta una logica de respuesta 
+"""
+primero = input("Ingrese el primer numero: ")
+try:
+    primero = int(primero)
+except:
+    print("El valor agregado no es un entero,intentelo nuevamente")
+    exit()
+
+segundo = input("Ingrese el segundo numero: ")
+try:
+    segundo = int(segundo)
+except:
+    print("El valor agregado no es un entero, intentelo nuevamente")
+    exit()
+
+simbolo = input("Ingresa operación: ")
+if simbolo == "+":
+    print(f"la suma es: {primero+segundo}")
+elif simbolo == "-":
+    print(f"la resta es: {primero-segundo}")
+elif simbolo == "*":
+    print(f"la multiplicación es: {primero*segundo}")
+elif simbolo == "/":
+    print(f"la divicion es: {primero/segundo}")
+else:
+    print(f"El simbolo ingresado: {simbolo} no es valido: +,-,*,/")
